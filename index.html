@@ -5,40 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Mercado Libre</title>
 </head>
 <body>
     <header>
-        <div>
-            <div>
-                <a href="index.html"><img src="media/logo.png" alt="logo"></a>
-                <form>
-                    <input type="text" placeholder="Buscar productos, marcas y más...">
-                    <button type="submit">Buscar</button>
+        <div class="bar">
+            <div class="nav-logo">
+                <a href="index.html"><img src="media/logo.png" alt="logo" class="img-logo"></a>
+            </div>
+            <div class="nav-search">
+                <form class="search-form">
+                    <input type="text" placeholder="Buscar productos, marcas y más..." class="search-input">
+                    <button type="submit" class="search-button"></button>
                 </form>
             </div>
-            <div>
-                <a href="#"><span>Ingresa tu domicilio</span></a>
+            <div class="nav-void"></div>
+            <div class="nav-residence">
+                <a href="#" class="residence-link"><span>Ingresa tu domicilio</span></a>
             </div>
-            <div>
+            <div class="nav-categories">
                 <nav>
-                    <ul>
-                        <li><a href="#">Ayuda / PQR</a></li>
-                        <li><a href="#">Vender</a></li>
-                        <li><a href="#">Moda</a></li>
-                        <li><a href="#">Supermercado</a></li>
-                        <li><a href="#">Historial</a></li>
-                        <li><a href="#">Ofertas</a></li>
-                        <li><a href="#">Categorías</a></li>
+                    <ul class="nav">
+                        <li class="nav-list">
+                            <a href="#" class="nav-link">Categorías</a>
+                            <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_1_16" fill="white">
+                                <path d="M4.54688 0.757355L8.78952 5L4.54688 9.24265L0.304229 5L4.54688 0.757355Z"/>
+                                </mask>
+                                <path d="M4.54688 9.24265L3.48621 10.3033L4.54688 11.364L5.60754 10.3033L4.54688 9.24265ZM7.72886 3.93934L3.48621 8.18199L5.60754 10.3033L9.85018 6.06066L7.72886 3.93934ZM5.60754 8.18199L1.36489 3.93934L-0.756431 6.06066L3.48621 10.3033L5.60754 8.18199Z" fill="black" fill-opacity="0.3" mask="url(#path-1-inside-1_1_16)"/>
+                            </svg>
+                        </li>
+                        <li class="nav-list"><a href="#" class="nav-link">Ofertas</a></li>
+                        <li class="nav-list"><a href="#" class="nav-link">Historial</a></li>
+                        <li class="nav-list"><a href="#" class="nav-link">Supermercado</a></li>
+                        <li class="nav-list"><a href="#" class="nav-link">Moda</a></li>
+                        <li class="nav-list"><a href="#" class="nav-link">Vender</a></li>
+                        <li class="nav-list"><a href="#" class="nav-link">Ayuda / PQR</a></li>
                     </ul>
                 </nav>
             </div>
-            <div>
+            <div class="nav-signin">
                 <nav>
-                    <ul>
-                        <li><a href="#">Crea tu cuenta</a></li>
-                        <li><a href="#">Ingresa</a></li>
-                        <li><a href="#">Mis compras</a></li>
+                    <ul class="nav">
+                        <li class="nav-list"><a href="#" class="nav-link">Crea tu cuenta</a></li>
+                        <li class="nav-list"><a href="#" class="nav-link">Ingresa</a></li>
+                        <li class="nav-list"><a href="#" class="nav-link">Mis compras</a></li>
                     </ul>
                 </nav>
             </div>

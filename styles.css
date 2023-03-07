@@ -185,11 +185,6 @@ main{
 }
 
 .advantages-grid{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
     display: grid;
     grid-template-columns: 75% 25%;
     grid-template-areas: "advantages-first advantages-second";
@@ -234,4 +229,85 @@ main{
 .color-link{
     text-decoration: underline;
     color: #3483FA;
+    font-size: 13px;
+}
+
+.title{
+    margin-bottom: 24px;
+    padding-top: 24px;
+}
+
+.section-title{
+    font-size: 25px;
+    color: #666666;
+}
+
+.section-link{
+    text-decoration: underline;
+    color: #3483FA;
+    font-size: 15px;
+}
+
+.centered{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.col-gap{
+    column-gap: 24px;
+}
+
+.my{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.card{
+    background-color: #FFFFFF;
+    height: 324px;
+}
+
+.card-description{
+    border-top: 1px solid #EEEEEE;
+    height: 100%;
+}
+
+.card-content{
+    width: 85%;
+    height: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.price{
+    color: #333333;
+    font-size: 23px;
+}
+
+.sale{
+    color: #00A650;
+    font-size: 14px;
+}
+
+.send{
+    color: #00A650;
+    font-size: 14px;
+    font-weight: bold;
 }

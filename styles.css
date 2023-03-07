@@ -24,6 +24,10 @@ header{
     align-items: center;
 }
 
+main{
+    background-color: #EBEBEB;
+}
+
 .bar{
     width: 80%;
     height: 100%;
@@ -54,6 +58,7 @@ header{
 
 .nav-residence{
     grid-area: nav-bottom-left;
+    color: #333333;
 }
 
 .nav-categories{
@@ -122,6 +127,10 @@ header{
     list-style-type: none;
 }
 
+.color{
+    color: #333333!important;
+}
+
 .nav-list{
     display: inline-block;
     margin: 0 5px;
@@ -129,7 +138,7 @@ header{
 
 .nav-link{
     text-decoration: none;
-    color: #333333;
+    color: #3333333c;
 }
 
 .slider-container{
@@ -173,4 +182,56 @@ header{
     list-style-type: circle;
     list-style-position: inside;
     color: #FFFFFF;
+}
+
+.advantages-grid{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-areas: "advantages-first advantages-second";
+    background-color: #FFFFFF;
+}
+
+.advantages-first{
+    display: flex;
+    flex-direction: row;
+    grid-area: advantages-first;
+    justify-content: space-around;
+    padding: 12px;
+}
+
+.advantages-second{
+    grid-area: advantages-second;
+    border-left: 1px solid #EEEEEE;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 12px;
+}
+
+.advantages-logo{
+    margin-right: 10px;
+}
+
+.advantages{
+    display: flex;
+    flex-direction: row;
+}
+
+.advantages-description{
+    display: flex;
+    flex-direction: column;
+}
+
+.font-17{
+    font-size: 17px;
+}
+
+.color-link{
+    text-decoration: underline;
+    color: #3483FA;
 }

@@ -131,3 +131,46 @@ header{
     text-decoration: none;
     color: #333333;
 }
+
+.slider-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    z-index: 910;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner-list{
+    height: 100%;
+    position: relative;
+    z-index: 915;
+    display: flex;
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+}
+
+.unordered{
+    display: flex;
+    left: auto;
+    position: absolute;
+    z-index: 920;
+    padding: 0;
+    background: none;
+    right: auto;
+    bottom: 4px;
+}
+
+.banner-list-buttons{
+    list-style-type: circle;
+    list-style-position: inside;
+    color: #FFFFFF;
+}

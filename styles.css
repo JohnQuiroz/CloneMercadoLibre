@@ -311,3 +311,109 @@ main{
     font-size: 14px;
     font-weight: bold;
 }
+
+.space-between{
+    justify-content: space-between;
+}
+
+.suscribe{
+    background: linear-gradient(to right, #A90F90 60%, #0C1A51);
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bold;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border: none;
+    height: 87px;
+    width: 100%;
+    padding: 12px;
+}
+
+.suscribe-title{
+    height: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.suscribe-price{
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.suscribe-price-pseudo{
+    border-left: #FFFFFF 1px solid;
+    height: 37px;
+}
+
+.suscribe-price-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+.suscribe-price-before{
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.suscribe-price-now{
+    font-size: 17px;
+}
+
+.suscribe-price-month{
+    font-size: 13px;
+}
+
+.suscribe-benefits{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    font-size: 17px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.suscribe-benefits-title{
+    margin: 12px;
+}
+
+.suscribe-benefits-description{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    border-bottom: 1px solid #EFEFEF;
+    width: 100%;
+    padding: 12px;
+}
+
+.suscribe-benefits-one, .suscribe-benefits-two, .suscribe-benefits-three{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 15px;
+    color: #000000;
+}
+
+.suscribe-benefits-three{
+    font-size: 16px !important;
+}
+
+.suscribe-button-container{
+    display: flex;
+    justify-content: end;
+    background-color: #FFFFFF;
+}
+
+.suscribe-button{
+    margin: 12px;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #3483FA;
+    border: none;
+    border-radius: 5px;
+    height: 48px;
+    width: 123px;
+}

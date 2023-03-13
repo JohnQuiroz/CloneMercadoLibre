@@ -693,3 +693,66 @@ main{
     color: #999999;
     font-weight: bold;
 }
+
+.collections-title{
+    font-size: 26px;
+    color: #666666;
+    margin: 12px;
+    font-weight: lighter;
+}
+
+.collections-title button{
+    font-weight: bold;
+    font-size: 26px;
+    color: #666666;
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+.collections-content{
+    display: grid;
+    grid-template-columns: 35% 60%;
+    column-gap: 12px;
+}
+
+.collections-content-main{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+}
+
+.collections-content-main img{
+    width: 100%;
+}
+
+.collections-content-main-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px;
+}
+
+.collections-content-main-text1{
+    font-size: 12px;
+    color: #4B4B4B;
+    font-weight: bold;
+}
+
+.collections-content-main-text2{
+    font-size: 28px;
+    color: #4B4B4B;
+    font-weight: bolder;
+}
+
+.collections-content-grid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    column-gap: 12px;
+    row-gap: 12px;
+}
+
+.collections-content-grid img{
+    width: 100%;
+}

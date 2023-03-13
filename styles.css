@@ -756,3 +756,36 @@ main{
 .collections-content-grid img{
     width: 100%;
 }
+
+.categories-title{
+    font-size: 25px;
+    color: #666666;
+    margin: 12px;
+    font-weight: lighter;
+}
+
+.categories-content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.categories-content-column{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.categories-content-cell{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6px;
+    border: 1px solid #E5E5E5;
+    height: 170px;
+    font-size: 14px;
+}

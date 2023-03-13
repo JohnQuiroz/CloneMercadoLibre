@@ -535,3 +535,57 @@ main{
     font-size: 11px;
     color: #FFFFFF;
 }
+
+.discover-title{
+    font-size: 26px;
+    color: #666666;
+    margin: 12px
+}
+
+.discover-description-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    column-gap: 12px;
+}
+
+.discover-description-container a{
+    text-decoration: none;
+}
+
+.discover-description-content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #FFFFFF;
+}
+
+.discover-description-content img{
+    width: 100%;
+}
+
+.discover-description-content-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+.discover-description-content-text span{
+    font-size: 28px;
+    color: #4B4B4B;
+}
+
+.discover-description-content-text-1{
+    font-size: 12px !important;
+}
+
+.discover-description-content-text button{
+    width: 96px;
+    height: 36px;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #3483FA;
+    border: none;
+    border-radius: 5px;
+}

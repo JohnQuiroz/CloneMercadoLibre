@@ -417,3 +417,121 @@ main{
     height: 48px;
     width: 123px;
 }
+
+.benefits-title{
+    font-size: 25px;
+    color: #666666;
+    margin: 12px
+}
+
+.benefits-title a{
+    text-decoration: none;
+    color: #3483FA;
+    font-size: 15px;
+}
+
+.benefits-description{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.benefits-description-disney{
+    display: flex;
+    height: 250px;
+    width: 32%;
+    background-image: url("media/beneficios 1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    align-items: end;
+}
+
+.benefits-description-disney-content{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding: 12px;
+}
+
+.benefits-description-disney-content-img img{
+    width: 85%;
+}
+
+.benefits-description-disney-content-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+.benefits-description-hbo{
+    display: flex;
+    height: 250px;
+    width: 32%;
+    background-image: url("media/beneficios 2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    align-items: end;
+}
+
+.benefits-description-hbo-content{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding: 12px;
+}
+
+.benefits-description-hbo-content-img img{
+    width: 85%;
+}
+
+.benefits-description-hbo-content-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+.benefits-description-paramount{
+    display: flex;
+    height: 250px;
+    width: 32%;
+    background-image: url("media/beneficios 3.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    align-items: end;
+}
+
+.benefits-description-paramount-content{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding: 12px;
+}
+
+.benefits-description-paramount-content-img img{
+    width: 85%;
+}
+
+.benefits-description-paramount-content-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+.benefits-description-text1{
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.benefits-description-text2{
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+.benefits-description-text3{
+    font-size: 11px;
+    color: #FFFFFF;
+}

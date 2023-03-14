@@ -6,13 +6,8 @@
     text-decoration: none;
 }
 
-.debug{
-    border: 1px solid red;
-}
-
 body{
     width: 100%;
-    height: 100vh;
 }
 
 header{
@@ -22,55 +17,46 @@ header{
     color: #333333;
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 main{
     background-color: #EBEBEB;
 }
 
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .bar{
     width: 80%;
-    height: 100%;
-    padding: 6px;
+    height: 92px;
     display: grid;
     grid-template-columns: 13% 50% 28%;
-    grid-template-rows: 56px 32px;
     grid-template-areas: "nav-top-left nav-top-center nav-top-right"
     "nav-bottom-left nav-bottom-center nav-bottom-right";
-    column-gap: 24px;
-    row-gap: 6px;
+    column-gap: 52px;
+    row-gap: 8px;
     font-size: 13px;
 }
 
 .nav-logo{
     grid-area: nav-top-left;
+    padding: 11px;
+}
+
+.nav-logo img{
+    width: 100%;
 }
 
 .nav-search{
     grid-area: nav-top-center;
-    height: 40px;
+    height: 56px;
     display: flex;
-}
-
-.nav-void{
-    grid-area: nav-top-right;
-}
-
-.nav-residence{
-    grid-area: nav-bottom-left;
-    color: #333333;
-}
-
-.nav-categories{
-    grid-area: nav-bottom-center;
-}
-
-.nav-signin{
-    grid-area: nav-bottom-right;
-}
-
-.img-logo{
     width: 100%;
 }
 
@@ -100,6 +86,7 @@ main{
     border-style: solid;
     border-color: rgba(0,0,0,0);
     border-width: 1.5px;
+    font-size: 15px;
 }
 
 .search-button{
@@ -112,34 +99,48 @@ main{
     font-size: 22px;
     color: #666666;
     width: 46px;
-    height: 26px;
+    height: 28px;
     right: 0;
-    top: 7px;
+    top: 14px;
     bottom: 0;
     border-left: 1px solid #e6e6e6;
 }
 
-.residence-link{
+.nav-residence{
+    grid-area: nav-bottom-left;
+    font-size: 13px;
+    padding-left: 14px;
+}
+
+.nav-residence a{
     text-decoration: none;
     color: #333333;
+}
+
+.nav-categories{
+    grid-area: nav-bottom-center;
 }
 
 .nav{
     list-style-type: none;
 }
 
-.color{
-    color: #333333!important;
-}
-
-.nav-list{
+.nav li{
     display: inline-block;
     margin: 0 5px;
 }
 
-.nav-link{
+.nav li a{
     text-decoration: none;
-    color: #3333333c;
+    color: #3333339a;
+}
+
+.nav-signin{
+    grid-area: nav-bottom-right;
+}
+
+.nav-signin a{
+    color: #333333!important;
 }
 
 .slider-container{
@@ -164,7 +165,7 @@ main{
     width: 100%;
 }
 
-.banner{
+.banner-list img{
     width: 100%;
 }
 
@@ -179,7 +180,7 @@ main{
     bottom: 4px;
 }
 
-.banner-list-buttons{
+.unordered li{
     list-style-type: circle;
     list-style-position: inside;
     color: #FFFFFF;
@@ -221,61 +222,41 @@ main{
 .advantages-description{
     display: flex;
     flex-direction: column;
-}
-
-.font-17{
     font-size: 17px;
 }
 
-.color-link{
+.advantages-description a{
     color: #3483FA;
     font-size: 13px;
 }
 
-.title{
+.offers-title{
     margin-bottom: 24px;
-    padding-top: 24px;
 }
 
-.section-title{
+.offers-title span{
     font-size: 25px;
     color: #666666;
 }
 
-.section-link{
+.offers-title a{
     color: #3483FA;
     font-size: 15px;
+}
+
+.offers-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 24px;
 }
 
 .centered{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-}
-
-.flex{
-    display: flex;
-}
-
-.row{
-    flex-direction: row;
-}
-
-.space-around{
-    justify-content: space-around;
-}
-
-.w-100{
-    width: 100%;
-}
-
-.col-gap{
-    column-gap: 24px;
-}
-
-.my{
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .card{
@@ -283,14 +264,16 @@ main{
     height: 324px;
 }
 
+.card img{
+    width: 100%;
+}
+
 .card-description{
     border-top: 1px solid #EEEEEE;
-    height: 100%;
 }
 
 .card-content{
     width: 85%;
-    height: 85%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -311,11 +294,15 @@ main{
     font-weight: bold;
 }
 
-.space-between{
-    justify-content: space-between;
+.card-content-compound{
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
 }
 
 .suscribe{
+    display: flex;
+    justify-content: space-between;
     background: linear-gradient(to right, #A90F90 60%, #0C1A51);
     color: #FFFFFF;
     font-size: 25px;
@@ -329,6 +316,7 @@ main{
 }
 
 .suscribe-title{
+    display: flex;
     height: 100%;
     flex-wrap: wrap;
     align-content: center;
@@ -380,7 +368,7 @@ main{
     margin: 12px;
 }
 
-.suscribe-benefits-description{
+.suscribe-benefits-container{
     display: grid;
     grid-template-columns: 33% 33% 33%;
     border-bottom: 1px solid #EFEFEF;
@@ -388,16 +376,12 @@ main{
     padding: 12px;
 }
 
-.suscribe-benefits-one, .suscribe-benefits-two, .suscribe-benefits-three{
+.suscribe-benefits-content{
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 15px;
     color: #000000;
-}
-
-.suscribe-benefits-three{
-    font-size: 16px !important;
 }
 
 .suscribe-button-container{
@@ -420,7 +404,6 @@ main{
 .benefits-title{
     font-size: 25px;
     color: #666666;
-    margin: 12px
 }
 
 .benefits-title a{
@@ -447,17 +430,17 @@ main{
     align-items: end;
 }
 
-.benefits-description-disney-content{
+.benefits-description-content{
     display: grid;
     grid-template-columns: 25% 75%;
     padding: 12px;
 }
 
-.benefits-description-disney-content-img img{
+.benefits-description-content-img img{
     width: 85%;
 }
 
-.benefits-description-disney-content-text{
+.benefits-description-content-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -475,23 +458,6 @@ main{
     align-items: end;
 }
 
-.benefits-description-hbo-content{
-    display: grid;
-    grid-template-columns: 25% 75%;
-    padding: 12px;
-}
-
-.benefits-description-hbo-content-img img{
-    width: 85%;
-}
-
-.benefits-description-hbo-content-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 12px;
-}
-
 .benefits-description-paramount{
     display: flex;
     height: 250px;
@@ -501,23 +467,6 @@ main{
     background-size: 100%;
     background-position: bottom;
     align-items: end;
-}
-
-.benefits-description-paramount-content{
-    display: grid;
-    grid-template-columns: 25% 75%;
-    padding: 12px;
-}
-
-.benefits-description-paramount-content-img img{
-    width: 85%;
-}
-
-.benefits-description-paramount-content-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 12px;
 }
 
 .benefits-description-text1{
@@ -557,10 +506,12 @@ main{
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: #FFFFFF;
+    height: 250px;
 }
 
 .discover-description-content img{
     width: 100%;
+    height: 250px;
 }
 
 .discover-description-content-text{

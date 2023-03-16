@@ -143,6 +143,10 @@ nav{
     color: #333333!important;
 }
 
+.container{
+    width: 100%;
+}
+
 .slider-container{
     display: flex;
     height: 100%;
@@ -186,11 +190,22 @@ nav{
     color: #FFFFFF;
 }
 
-.advantages-grid{
+.first-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #ECECEC;
+    margin-top: 40px;
+    padding-bottom: 72px;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages-section{
     display: grid;
     grid-template-columns: 75% 25%;
     grid-template-areas: "advantages-first advantages-second";
     background-color: #FFFFFF;
+    width: 80%;
 }
 
 .advantages-first{
@@ -230,12 +245,14 @@ nav{
     font-size: 13px;
 }
 
-.offers-title{
-    margin-bottom: 24px;
+.offers-section{
+    width: 80%;
+    padding-top: 48px;
 }
 
 .offers-title span{
     font-size: 25px;
+    margin-right: 16px;
     color: #666666;
 }
 
@@ -248,15 +265,8 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    column-gap: 24px;
-}
-
-.centered{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    column-gap: 16px;
+    margin-top: 20px;
 }
 
 .card{
@@ -269,13 +279,18 @@ nav{
 }
 
 .card-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-top: 1px solid #EEEEEE;
 }
 
 .card-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
     width: 85%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 19px;
 }
 
 .price{
@@ -297,7 +312,13 @@ nav{
 .card-content-compound{
     display: flex;
     flex-direction: row;
-    column-gap: 24px;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.suscribe-section{
+    width: 80%;
+    padding-top: 56px;
 }
 
 .suscribe{
@@ -362,10 +383,12 @@ nav{
     font-size: 17px;
     background-color: #FFFFFF;
     color: #000000;
+    row-gap: 29px;
 }
 
 .suscribe-benefits-title{
-    margin: 12px;
+    margin-top: 19px;
+    margin-left: 24px;
 }
 
 .suscribe-benefits-container{
@@ -373,7 +396,9 @@ nav{
     grid-template-columns: 33% 33% 33%;
     border-bottom: 1px solid #EFEFEF;
     width: 100%;
-    padding: 12px;
+    padding-left: 24px;
+    padding-bottom: 24px;
+    padding-right: 24px;
 }
 
 .suscribe-benefits-content{
@@ -388,10 +413,12 @@ nav{
     display: flex;
     justify-content: end;
     background-color: #FFFFFF;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-right: 30px;
 }
 
 .suscribe-button{
-    margin: 12px;
     font-size: 15px;
     color: #FFFFFF;
     background-color: #3483FA;
@@ -399,6 +426,11 @@ nav{
     border-radius: 5px;
     height: 48px;
     width: 123px;
+}
+
+.benefits-section{
+    width: 80%;
+    padding-top: 82px;
 }
 
 .benefits-title{
@@ -416,57 +448,61 @@ nav{
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-around;
+    column-gap: 12px;
 }
 
 .benefits-description-disney{
     display: flex;
     height: 250px;
-    width: 32%;
+    width: 100%;
     background-image: url("media/beneficios 1.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-position: bottom;
     align-items: end;
+    border-radius: 7px;
 }
 
 .benefits-description-content{
     display: grid;
     grid-template-columns: 25% 75%;
-    padding: 12px;
+    padding: 16px;
 }
 
 .benefits-description-content-img img{
-    width: 85%;
+    width: 100%;
 }
 
 .benefits-description-content-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 12px;
+    margin-left: 14px;
+    row-gap: 5px;
 }
 
 .benefits-description-hbo{
     display: flex;
     height: 250px;
-    width: 32%;
+    width: 100%;
     background-image: url("media/beneficios 2.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-position: bottom;
     align-items: end;
+    border-radius: 7px;
 }
 
 .benefits-description-paramount{
     display: flex;
     height: 250px;
-    width: 32%;
+    width: 100%;
     background-image: url("media/beneficios 3.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-position: bottom;
     align-items: end;
+    border-radius: 7px;
 }
 
 .benefits-description-text1{
@@ -484,10 +520,14 @@ nav{
     color: #FFFFFF;
 }
 
+.discover-section{
+    width: 80%;
+    padding-top: 100px;
+}
+
 .discover-title{
     font-size: 26px;
     color: #666666;
-    margin: 12px
 }
 
 .discover-description-container{
@@ -495,11 +535,8 @@ nav{
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
-    column-gap: 12px;
-}
-
-.discover-description-container a{
-    text-decoration: none;
+    column-gap: 15px;
+    margin-top: 28px;
 }
 
 .discover-description-content{
@@ -507,18 +544,20 @@ nav{
     grid-template-columns: 50% 50%;
     background-color: #FFFFFF;
     height: 250px;
+    border-radius: 4px;
 }
 
 .discover-description-content img{
     width: 100%;
     height: 250px;
+    border-radius: 0 4px 4px 0;
 }
 
 .discover-description-content-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 12px;
+    margin-left: 32px;
 }
 
 .discover-description-content-text span{
@@ -528,6 +567,7 @@ nav{
 
 .discover-description-content-text-1{
     font-size: 12px !important;
+    margin-bottom: 18px;
 }
 
 .discover-description-content-text button{
@@ -537,25 +577,32 @@ nav{
     color: #FFFFFF;
     background-color: #3483FA;
     border: none;
-    border-radius: 5px;
+    border-radius: 2px;
+    margin-top: 18px;
+}
+
+.stores-section{
+    width: 80%;
+    padding-top: 60px;
 }
 
 .stores-title{
     font-size: 25px;
     color: #666666;
-    margin: 12px
+    margin-bottom: 30px;
 }
 
 .stores-title a{
     text-decoration: none;
     color: #3483FA;
     font-size: 15px;
+    margin-left: 18px;
 }
 
 .stores-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    column-gap: 16px;
     width: 100%;
 }
 
@@ -570,6 +617,7 @@ nav{
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: #FFFFFF;
+    border-radius: 4px;
 }
 
 .stores-description-2{
@@ -583,6 +631,7 @@ nav{
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: #FFFFFF;
+    border-radius: 4px;
 }
 
 .stores-description-3{
@@ -596,6 +645,7 @@ nav{
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: #FFFFFF;
+    border-radius: 4px;
 }
 
 .stores-description-4{
@@ -609,6 +659,7 @@ nav{
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: #FFFFFF;
+    border-radius: 4px;
 }
 
 .stores-description-logo{
@@ -645,10 +696,22 @@ nav{
     font-weight: bold;
 }
 
+.second-container{
+    padding-top: 40px;
+    background-color: #EBEBEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.collections-section{
+    width: 80%;
+}
+
 .collections-title{
     font-size: 26px;
     color: #666666;
-    margin: 12px;
     font-weight: lighter;
 }
 
@@ -663,17 +726,20 @@ nav{
 .collections-content{
     display: grid;
     grid-template-columns: 35% 60%;
-    column-gap: 12px;
+    column-gap: 18px;
+    margin-top: 28px;
 }
 
 .collections-content-main{
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
+    border-radius: 4px;
 }
 
 .collections-content-main img{
     width: 100%;
+    border-radius: 4px 4px 0 0;
 }
 
 .collections-content-main-description{
@@ -700,18 +766,24 @@ nav{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 50% 50%;
-    column-gap: 12px;
-    row-gap: 12px;
+    column-gap: 16px;
+    row-gap: 16px;
 }
 
 .collections-content-grid img{
     width: 100%;
+    border-radius: 4px;
+}
+
+.categories-section{
+    width: 80%;
+    margin-top: 85px;
+    margin-bottom: 18px;
 }
 
 .categories-title{
     font-size: 25px;
     color: #666666;
-    margin: 12px;
     font-weight: lighter;
 }
 
@@ -720,6 +792,7 @@ nav{
     flex-direction: row;
     width: 100%;
     background-color: #FFFFFF;
+    margin-top: 29px;
 }
 
 .categories-content-column{
